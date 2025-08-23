@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass UI Components</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-container"></div>
+
+    <div class="page-header">
+        <h1 class="page-title">Liquid Glass UI</h1>
+        <p class="page-subtitle">现代玻璃拟态组件库</p>
+    </div>
+
+    <div class="components-grid">
+        <!-- Buttons Showcase -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">按钮</h3>
+                <p class="showcase-description">具有悬停效果的交互式玻璃按钮</p>
+            </div>
+            <div class="demo-area">
+                <div class="button-group">
+                    <button class="glass-button">默认</button>
+                    <button class="glass-button primary">主要</button>
+                </div>
+                <div class="button-group">
+                    <button class="glass-button small">小尺寸</button>
+                    <button class="glass-button large">大尺寸</button>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;button class="glass-button"&gt;默认&lt;/button&gt;
+&lt;button class="glass-button primary"&gt;主要&lt;/button&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Input Fields Showcase -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">输入框</h3>
+                <p class="showcase-description">具有玻璃效果的透明输入字段</p>
+            </div>
+            <div class="demo-area">
+                <div class="form-group">
+                    <label class="form-label">用户名</label>
+                    <input type="text" class="glass-input" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">邮箱地址</label>
+                    <input type="email" class="glass-input" placeholder="请输入邮箱">
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;input type="text" class="glass-input" placeholder="请输入文本"&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Select Dropdown -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">选择框</h3>
+                <p class="showcase-description">玻璃风格的下拉选择器</p>
+            </div>
+            <div class="demo-area">
+
+                <div class="form-group">
+                    <label class="form-label">选择主题</label>
+                    <div class="glass-select-container">
+                        <div class="glass-select compact" data-placeholder="选择主题">
+                            <div class="select-trigger">
+                                <span class="select-value">选择主题</span>
+                                <div class="select-arrow">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M7 10l5 5 5-5z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="select-dropdown">
+                                <div class="select-option" data-value="light">
+                                    <span class="option-color" style="background: linear-gradient(45deg, #fff, #f0f0f0);"></span>
+                                    <span class="option-text">浅色主题</span>
+                                </div>
+                                <div class="select-option" data-value="dark">
+                                    <span class="option-color" style="background: linear-gradient(45deg, #333, #000);"></span>
+                                    <span class="option-text">深色主题</span>
+                                </div>
+                                <div class="select-option" data-value="blue">
+                                    <span class="option-color" style="background: linear-gradient(45deg, #4a90e2, #357abd);"></span>
+                                    <span class="option-text">蓝色主题</span>
+                                </div>
+                                <div class="select-option" data-value="purple">
+                                    <span class="option-color" style="background: linear-gradient(45deg, #9b59b6, #8e44ad);"></span>
+                                    <span class="option-text">紫色主题</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-select" data-placeholder="请选择"&gt;
+  &lt;div class="select-trigger"&gt;
+    &lt;span class="select-value"&gt;请选择&lt;/span&gt;
+    &lt;div class="select-arrow"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="select-dropdown"&gt;
+    &lt;div class="select-option" data-value="value"&gt;
+      &lt;span class="option-text"&gt;选项&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Checkboxes and Radio -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">复选框 & 单选框</h3>
+                <p class="showcase-description">玻璃风格的选择控件</p>
+            </div>
+            <div class="demo-area">
+                <div class="form-group">
+                    <label class="form-label">兴趣爱好</label>
+                    <div class="checkbox-group">
+                        <label class="glass-checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            前端开发
+                        </label>
+                        <label class="glass-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            UI设计
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">性别</label>
+                    <div class="radio-group">
+                        <label class="glass-radio">
+                            <input type="radio" name="gender" value="male" checked>
+                            <span class="radiomark"></span>
+                            男
+                        </label>
+                        <label class="glass-radio">
+                            <input type="radio" name="gender" value="female">
+                            <span class="radiomark"></span>
+                            女
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;label class="glass-checkbox"&gt;
+  &lt;input type="checkbox"&gt;
+  &lt;span class="checkmark"&gt;&lt;/span&gt;
+  选项
+&lt;/label&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Switch Toggle -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">开关</h3>
+                <p class="showcase-description">玻璃风格的切换开关</p>
+            </div>
+            <div class="demo-area">
+                <div class="switch-group">
+                    <label class="glass-switch">
+                        <input type="checkbox" checked>
+                        <span class="switch-slider"></span>
+                        <span class="switch-label">深色模式</span>
+                    </label>
+                    <label class="glass-switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        <span class="switch-label">消息通知</span>
+                    </label>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;label class="glass-switch"&gt;
+  &lt;input type="checkbox"&gt;
+  &lt;span class="switch-slider"&gt;&lt;/span&gt;
+  &lt;span class="switch-label"&gt;开关&lt;/span&gt;
+&lt;/label&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">进度条</h3>
+                <p class="showcase-description">长条形玻璃风格进度指示器</p>
+            </div>
+            <div class="demo-area">
+                <div class="progress-group">
+                    <!-- 玻璃进度条 -->
+                    <div class="progress-container">
+                        <label class="progress-label">下载进度 - 75%</label>
+                        <div class="glass-progress">
+                            <div class="progress-track">
+                                <div class="progress-fill" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-progress"&gt;
+  &lt;div class="progress-track"&gt;
+    &lt;div class="progress-fill" data-progress="75"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">加载器</h3>
+                <p class="showcase-description">玻璃风格的加载动画</p>
+            </div>
+            <div class="demo-area">
+                <div class="loader-group">
+                    <!-- 无头加载器 - 小尺寸 -->
+                    <div class="glass-loader spinner-headless small">
+                        <div class="spinner-ring"></div>
+                    </div>
+
+                    <!-- 无头加载器 - 中等尺寸 -->
+                    <div class="glass-loader spinner-headless medium">
+                        <div class="spinner-ring"></div>
+                    </div>
+
+                    <!-- 无头加载器 - 大尺寸 -->
+                    <div class="glass-loader spinner-headless large">
+                        <div class="spinner-ring"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;!-- 无头加载器 --&gt;
+&lt;div class="glass-loader spinner-headless medium"&gt;
+  &lt;div class="spinner-ring"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Badges Showcase -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">徽章</h3>
+                <p class="showcase-description">状态指示器和标签</p>
+            </div>
+            <div class="demo-area">
+                <div class="badge-group">
+                    <span class="glass-badge">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                        活跃
+                    </span>
+                    <span class="glass-badge verified">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"/>
+                        </svg>
+                        已认证
+                    </span>
+                    <span class="glass-badge premium">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5,16L3,5H1V3H4L6,14L7,18H20V16H5M19,7H12L10,5H19A2,2 0 0,1 21,7A2,2 0 0,1 19,9H17L19,7M10,19A1,1 0 0,0 11,20A1,1 0 0,0 12,19A1,1 0 0,0 11,18A1,1 0 0,0 10,19M18,19A1,1 0 0,0 19,20A1,1 0 0,0 20,19A1,1 0 0,0 19,18A1,1 0 0,0 18,19Z"/>
+                        </svg>
+                        高级
+                    </span>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;span class="glass-badge"&gt;活跃&lt;/span&gt;
+&lt;span class="glass-badge verified"&gt;已认证&lt;/span&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Avatars Showcase -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">头像</h3>
+                <p class="showcase-description">带有玻璃边框的用户头像</p>
+            </div>
+            <div class="demo-area">
+                <div class="avatar-group">
+                    <div class="glass-avatar small"></div>
+                    <div class="glass-avatar"></div>
+                    <div class="glass-avatar large"></div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-avatar"&gt;&lt;/div&gt;
+&lt;div class="glass-avatar large"&gt;&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">导航栏</h3>
+                <p class="showcase-description">玻璃风格的导航组件</p>
+            </div>
+            <div class="demo-area">
+                <nav class="glass-nav">
+                    <div class="nav-item active">首页</div>
+                    <div class="nav-item">产品</div>
+                    <div class="nav-item">服务</div>
+                    <div class="nav-item">关于</div>
+                </nav>
+            </div>
+            <div class="code-block">
+                <pre>&lt;nav class="glass-nav"&gt;
+  &lt;div class="nav-item active"&gt;首页&lt;/div&gt;
+  &lt;div class="nav-item"&gt;产品&lt;/div&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">标签页</h3>
+                <p class="showcase-description">玻璃风格的选项卡组件</p>
+            </div>
+            <div class="demo-area">
+                <div class="glass-tabs">
+                    <div class="tab-header">
+                        <div class="tab-item active">概述</div>
+                        <div class="tab-item">详情</div>
+                        <div class="tab-item">评价</div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <p>这是概述内容区域</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-tabs"&gt;
+  &lt;div class="tab-header"&gt;
+    &lt;div class="tab-item active"&gt;标签&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Slider Range -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">滑块</h3>
+                <p class="showcase-description">玻璃风格的范围选择器</p>
+            </div>
+            <div class="demo-area">
+                <div class="slider-group">
+                    <label class="form-label">音量: 65%</label>
+                    <div class="glass-slider">
+                        <input type="range" class="slider-input" min="0" max="100" value="65">
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-slider"&gt;
+  &lt;input type="range" class="slider-input" min="0" max="100" value="50"&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Cards Showcase -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">卡片</h3>
+                <p class="showcase-description">具有玻璃拟态效果的内容容器</p>
+            </div>
+            <div class="demo-area">
+                <div class="glass-card">
+                    <h4>玻璃卡片</h4>
+                    <p>这是一个具有玻璃拟态效果和背景模糊的示例卡片组件。</p>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-card"&gt;
+  &lt;h4&gt;标题&lt;/h4&gt;
+  &lt;p&gt;内容区域&lt;/p&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">模态框</h3>
+                <p class="showcase-description">玻璃风格的弹出对话框</p>
+            </div>
+            <div class="demo-area">
+                <button class="glass-button" onclick="openModal()">打开模态框</button>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-modal"&gt;
+  &lt;div class="modal-content"&gt;
+    &lt;div class="modal-header"&gt;...&lt;/div&gt;
+    &lt;div class="modal-body"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Tooltip -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">提示工具</h3>
+                <p class="showcase-description">玻璃风格的悬停提示</p>
+            </div>
+            <div class="demo-area">
+                <div class="tooltip-group">
+                    <div class="glass-tooltip-container">
+                        <button class="glass-button">悬停查看提示</button>
+                        <div class="glass-tooltip">这是一个玻璃风格的提示信息</div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-tooltip-container"&gt;
+  &lt;button&gt;悬停元素&lt;/button&gt;
+  &lt;div class="glass-tooltip"&gt;提示内容&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">分页器</h3>
+                <p class="showcase-description">玻璃风格的页面导航</p>
+            </div>
+            <div class="demo-area">
+                <div class="glass-pagination">
+                    <button class="page-btn" disabled>上一页</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-ellipsis">...</span>
+                    <button class="page-btn">8</button>
+                    <button class="page-btn">下一页</button>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-pagination"&gt;
+  &lt;button class="page-btn active"&gt;1&lt;/button&gt;
+  &lt;button class="page-btn"&gt;2&lt;/button&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">面包屑</h3>
+                <p class="showcase-description">玻璃风格的导航路径</p>
+            </div>
+            <div class="demo-area">
+                <nav class="glass-breadcrumb">
+                    <a href="#" class="breadcrumb-item">首页</a>
+                    <span class="breadcrumb-divider">/</span>
+                    <a href="#" class="breadcrumb-item">产品</a>
+                    <span class="breadcrumb-divider">/</span>
+                    <span class="breadcrumb-item active">详情</span>
+                </nav>
+            </div>
+            <div class="code-block">
+                <pre>&lt;nav class="glass-breadcrumb"&gt;
+  &lt;a class="breadcrumb-item"&gt;首页&lt;/a&gt;
+  &lt;span class="breadcrumb-divider"&gt;/&lt;/span&gt;
+  &lt;span class="breadcrumb-item active"&gt;当前&lt;/span&gt;
+&lt;/nav&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Time Picker -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">时间选择器</h3>
+                <p class="showcase-description">玻璃风格的时间选择组件</p>
+            </div>
+            <div class="demo-area">
+                <div class="time-picker-group">
+                    <div class="time-picker-item">
+                        <label class="form-label">选择时间</label>
+                        <div class="glass-time-picker" data-time="14:30">
+                            <div class="time-display">
+                                <span class="time-value">14:30</span>
+                                <div class="time-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                        <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="time-panel">
+                                <div class="time-column">
+                                    <div class="time-column-header">时</div>
+                                    <div class="time-options hour-options"></div>
+                                </div>
+                                <div class="time-separator">:</div>
+                                <div class="time-column">
+                                    <div class="time-column-header">分</div>
+                                    <div class="time-options minute-options"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-time-picker" data-time="14:30"&gt;
+  &lt;div class="time-display"&gt;
+    &lt;span class="time-value"&gt;14:30&lt;/span&gt;
+    &lt;div class="time-icon"&gt;
+      &lt;svg viewBox="0 0 24 24"&gt;...&lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="time-panel"&gt;...&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">通知</h3>
+                <p class="showcase-description">玻璃风格的消息通知</p>
+            </div>
+            <div class="demo-area">
+                <div class="notification-group">
+                    <button class="glass-button" onclick="showNotification('success')">成功通知</button>
+                    <button class="glass-button" onclick="showNotification('warning')">警告通知</button>
+                    <button class="glass-button" onclick="showNotification('error')">错误通知</button>
+                </div>
+                <div class="glass-notification success">
+                    <div class="notification-content">
+                        <div class="notification-title">成功</div>
+                        <span class="notification-separator">-</span>
+                        <div class="notification-message">操作已成功完成</div>
+                    </div>
+                    <button class="notification-close">×</button>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="glass-notification success"&gt;
+  &lt;div class="notification-content"&gt;
+    &lt;div class="notification-title"&gt;成功&lt;/div&gt;
+    &lt;span class="notification-separator"&gt;-&lt;/span&gt;
+    &lt;div class="notification-message"&gt;操作完成&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="notification-close"&gt;×&lt;/button&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Text Area -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">文本框</h3>
+                <p class="showcase-description">玻璃风格的多行文本输入框</p>
+            </div>
+            <div class="demo-area">
+                <div class="textarea-group">
+                    <div class="textarea-item">
+                        <label class="form-label">高级文本编辑器</label>
+                        <div class="custom-textarea-container">
+                            <div class="textarea-toolbar">
+                                <button class="toolbar-btn" data-action="bold" title="加粗">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6 4h8c3.3 0 6 2.7 6 6 0 2-1 3.8-2.5 4.9C19 16.1 20 17.9 20 20c0 3.3-2.7 6-6 6H6V4zm8 7c1.7 0 3-1.3 3-3s-1.3-3-3-3H9v6h5zm-5 2v6h6c1.7 0 3-1.3 3-3s-1.3-3-3-3H9z"/>
+                                    </svg>
+                                </button>
+                                <button class="toolbar-btn" data-action="italic" title="斜体">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4h-8z"/>
+                                    </svg>
+                                </button>
+                                <button class="toolbar-btn" data-action="underline" title="下划线">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z"/>
+                                    </svg>
+                                </button>
+                                <div class="toolbar-divider"></div>
+                                <button class="toolbar-btn" data-action="insertText" data-text="• " title="项目符号">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"/>
+                                    </svg>
+                                </button>
+                                <button class="toolbar-btn" data-action="insertText" data-text="1. " title="编号列表">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"/>
+                                    </svg>
+                                </button>
+                                <div class="toolbar-divider"></div>
+                                <button class="toolbar-btn" data-action="clear" title="清除内容">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                    </svg>
+                                </button>
+                                <div class="char-counter">
+                                    <span class="char-count">0</span>
+                                    <span class="char-limit">/500</span>
+                                </div>
+                            </div>
+                            <div class="textarea-wrapper">
+                                <textarea class="glass-textarea enhanced" 
+                                          placeholder="开始输入您的内容... 支持快捷键：Ctrl+B(加粗), Ctrl+I(斜体), Ctrl+U(下划线)" 
+                                          rows="6" 
+                                          maxlength="500"
+                                          data-enhanced="true"></textarea>
+                                <div class="textarea-status">
+                                    <div class="status-indicators">
+                                        <span class="status-indicator" data-status="saved">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                            </svg>
+                                            已保存
+                                        </span>
+                                        <span class="status-indicator" data-status="typing" style="display: none;">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                            </svg>
+                                            输入中...
+                                        </span>
+                                    </div>
+                                    <div class="word-count">
+                                        <span class="words">0</span> 词
+                                        <span class="lines">1</span> 行
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textarea-item">
+                        <label class="form-label">简洁模式</label>
+                        <textarea class="glass-textarea minimal" placeholder="简洁的文本输入框..." rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;textarea class="glass-textarea" placeholder="请输入内容..." rows="4"&gt;&lt;/textarea&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Forms Showcase -->
+        <div class="component-showcase">
+            <div class="showcase-header">
+                <h3 class="showcase-title">表单元素</h3>
+                <p class="showcase-description">具有玻璃样式的完整表单</p>
+            </div>
+            <div class="demo-area">
+                <div class="form-group">
+                    <label class="form-label">姓名</label>
+                    <input type="text" class="glass-input" placeholder="张三">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">留言</label>
+                    <textarea class="glass-input textarea" placeholder="请输入您的留言..." rows="3"></textarea>
+                </div>
+                <div class="button-group">
+                    <button class="glass-button">重置</button>
+                    <button class="glass-button primary">提交</button>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre>&lt;div class="form-group"&gt;
+  &lt;label class="form-label"&gt;标签&lt;/label&gt;
+  &lt;input class="glass-input" placeholder="..."&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 - 覆盖整个页面 -->
+    <div id="glassModal" class="glass-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>提示</h4>
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>这是一个玻璃风格的模态框示例。</p>
+            </div>
+            <div class="modal-footer">
+                <button class="glass-button" onclick="closeModal()">取消</button>
+                <button class="glass-button primary">确认</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

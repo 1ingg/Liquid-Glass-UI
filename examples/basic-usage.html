@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass UI - 基础使用示例</title>
+    
+    <!-- 引入 Liquid Glass UI CSS -->
+    <link rel="stylesheet" href="../liquid-glass-ui.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .demo-section {
+            margin-bottom: 40px;
+        }
+        
+        .demo-title {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .component-demo {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-section">
+        <h1 class="demo-title">Liquid Glass UI 基础组件示例</h1>
+    </div>
+
+    <div class="demo-grid">
+        <!-- 按钮示例 -->
+        <div class="glass-card component-demo">
+            <h3 style="color: white; margin-top: 0;">按钮组件</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+                <button class="glass-button">默认按钮</button>
+                <button class="glass-button primary">主要按钮</button>
+                <button class="glass-button secondary">次要按钮</button>
+                <button class="glass-button" disabled>禁用按钮</button>
+            </div>
+        </div>
+
+        <!-- 输入框示例 -->
+        <div class="glass-card component-demo">
+            <h3 style="color: white; margin-top: 0;">输入组件</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+                <input type="text" class="glass-input" placeholder="文本输入框">
+                <input type="email" class="glass-input" placeholder="邮箱输入框">
+                <textarea class="glass-textarea" placeholder="多行文本输入" rows="3"></textarea>
+            </div>
+        </div>
+
+        <!-- 表单组件示例 -->
+        <div class="glass-card component-demo">
+            <h3 style="color: white; margin-top: 0;">表单组件</h3>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <label class="glass-checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    复选框选项
+                </label>
+                
+                <label class="glass-radio">
+                    <input type="radio" name="demo-radio" checked>
+                    <span class="radio-mark"></span>
+                    单选框选项
+                </label>
+                
+                <label class="glass-switch">
+                    <input type="checkbox" checked>
+                    <span class="switch-slider"></span>
+                    开关组件
+                </label>
+            </div>
+        </div>
+
+        <!-- 徽章示例 -->
+        <div class="glass-card component-demo">
+            <h3 style="color: white; margin-top: 0;">徽章组件</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+                <span class="glass-badge">默认</span>
+                <span class="glass-badge success">成功</span>
+                <span class="glass-badge warning">警告</span>
+                <span class="glass-badge error">错误</span>
+                <span class="glass-badge info">信息</span>
+            </div>
+        </div>
+
+        <!-- 进度条示例 -->
+        <div class="glass-card component-demo">
+            <h3 style="color: white; margin-top: 0;">进度条</h3>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                        <span style="color: rgba(255,255,255,0.8); font-size: 14px;">进度</span>
+                        <span style="color: rgba(255,255,255,0.9); font-size: 14px;">65%</span>
+                    </div>
+                    <div class="glass-progress">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 卡片组合示例 -->
+        <div class="glass-card component-demo">
+            <h3 style="color: white; margin-top: 0;">用户信息卡片</h3>
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 20px;">👤</div>
+                <div>
+                    <div style="color: white; font-weight: 500;">张三</div>
+                    <div style="color: rgba(255,255,255,0.7); font-size: 14px;">前端开发工程师</div>
+                </div>
+            </div>
+            <div style="display: flex; gap: 8px;">
+                <button class="glass-button primary small">编辑</button>
+                <button class="glass-button small">查看</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; padding: 20px;">
+        <p style="color: rgba(255,255,255,0.8);">
+            更多组件和示例请查看 
+            <a href="https://1ingg.github.io/Liquid-Glass-UI/" style="color: rgba(255,255,255,0.9); text-decoration: underline;">官方文档</a>
+        </p>
+    </div>
+</body>
+</html> 
