@@ -2,6 +2,8 @@
 
 > 现代液态玻璃UI组件库 - 轻量级、无依赖、响应式
 
+[![NPM Version](https://img.shields.io/npm/v/@1ing/liquid-glass-ui.svg)](https://www.npmjs.com/package/@1ing/liquid-glass-ui)
+[![NPM Downloads](https://img.shields.io/npm/dm/@1ing/liquid-glass-ui.svg)](https://www.npmjs.com/package/@1ing/liquid-glass-ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![CSS](https://img.shields.io/badge/CSS-Only-blue.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Responsive](https://img.shields.io/badge/Responsive-✓-green.svg)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
@@ -17,21 +19,43 @@
 
 ## 🚀 快速开始
 
+### NPM 安装（推荐）
+
+```bash
+npm install @1ing/liquid-glass-ui
+```
+
+然后在您的项目中引入：
+
+```css
+/* 在 CSS 文件中引入 */
+@import '@1ing/liquid-glass-ui/liquid-glass-ui.css';
+```
+
+或者在 HTML 中引入：
+
+```html
+<!-- 引入完整版本 -->
+<link rel="stylesheet" href="node_modules/@1ing/liquid-glass-ui/liquid-glass-ui.css">
+<!-- 或引入压缩版本 -->
+<link rel="stylesheet" href="node_modules/@1ing/liquid-glass-ui/liquid-glass-ui.min.css">
+```
+
 ### CDN 引入
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/1ingg/Liquid-Glass-UI@main/liquid-glass-ui.css">
-```
+<!-- 通过 unpkg CDN -->
+<link rel="stylesheet" href="https://unpkg.com/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
+<!-- 或压缩版本 -->
+<link rel="stylesheet" href="https://unpkg.com/@1ing/liquid-glass-ui@latest/liquid-glass-ui.min.css">
 
-### NPM 安装
-
-```bash
-npm install liquid-glass-ui
+<!-- 通过 jsdelivr CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
 ```
 
 ### 本地下载
 
-下载 `liquid-glass-ui.css` 文件并在HTML中引入：
+从 [GitHub Releases](https://github.com/1ingg/Liquid-Glass-UI/releases) 下载最新版本，或直接下载 `liquid-glass-ui.css` 文件：
 
 ```html
 <link rel="stylesheet" href="path/to/liquid-glass-ui.css">
@@ -95,6 +119,15 @@ npm install liquid-glass-ui
 - [ ] 标签页 Tabs
 - [ ] 面包屑 Breadcrumb
 - [ ] 分页 Pagination
+
+## 📦 NPM 包
+
+- **包名**: `@1ing/liquid-glass-ui`
+- **版本**: ![NPM Version](https://img.shields.io/npm/v/@1ing/liquid-glass-ui.svg)
+- **大小**: ![Bundle Size](https://img.shields.io/bundlephobia/minzip/@1ing/liquid-glass-ui.svg)
+- **下载量**: ![NPM Downloads](https://img.shields.io/npm/dm/@1ing/liquid-glass-ui.svg)
+
+查看 NPM 包详情：[npmjs.com/package/@1ing/liquid-glass-ui](https://www.npmjs.com/package/@1ing/liquid-glass-ui)
 
 ## 📚 文档
 

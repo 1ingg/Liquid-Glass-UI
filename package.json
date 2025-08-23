@@ -1,11 +1,14 @@
 {
-  "name": "liquid-glass-ui",
+  "name": "@1ing/liquid-glass-ui",
   "version": "1.0.0",
   "description": "现代液态玻璃UI组件库 - 轻量级、无依赖、响应式",
   "main": "liquid-glass-ui.css",
+  "style": "liquid-glass-ui.css",
   "files": [
     "liquid-glass-ui.css",
-    "liquid-glass-ui.min.css"
+    "liquid-glass-ui.min.css",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "docs:dev": "cd docs && npm run docs:dev",
@@ -13,6 +16,7 @@
     "docs:preview": "cd docs && npm run docs:preview",
     "build": "npm run build:min",
     "build:min": "cleancss -o liquid-glass-ui.min.css liquid-glass-ui.css",
+    "prepublishOnly": "npm run build",
     "test": "echo \"暂无测试\" && exit 0"
   },
   "repository": {
@@ -38,12 +42,12 @@
   },
   "homepage": "https://1ingg.github.io/Liquid-Glass-UI/",
   "devDependencies": {
-    "clean-css-cli": "^5.6.2"
+    "clean-css-cli": "^5.6.3"
   },
   "browserslist": [
     "Chrome >= 88",
-    "Firefox >= 84", 
+    "Firefox >= 84",
     "Safari >= 14",
     "Edge >= 88"
   ]
-} 
+}
