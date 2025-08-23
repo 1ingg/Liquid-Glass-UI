@@ -86,9 +86,9 @@ export default defineConfig({
       ]
     },
 
-            socialLinks: [
+    socialLinks: [
           { icon: 'github', link: 'https://github.com/1ingg/Liquid-Glass-UI' }
-        ],
+    ],
 
     footer: {
       message: 'Released under the MIT License.',

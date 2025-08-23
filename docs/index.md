@@ -6,7 +6,7 @@ hero:
   text: "现代液态玻璃UI组件库"
   tagline: 轻量级、现代化、无依赖的CSS组件库
   image:
-    src: /favicon.jpg
+    src: /favicon.ico
     alt: Liquid Glass UI
   actions:
     - theme: brand
