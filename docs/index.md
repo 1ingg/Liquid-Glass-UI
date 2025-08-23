@@ -17,7 +17,7 @@ hero:
       link: /components/
     - theme: alt
       text: GitHub
-      link: https://github.com/liquid-glass-ui/liquid-glass-ui
+      link: https://github.com/1ingg/Liquid-Glass-UI
 
 features:
   - icon: 🎨

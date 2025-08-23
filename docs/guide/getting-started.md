@@ -15,7 +15,7 @@
     <title>我的第一个 Liquid Glass UI 页面</title>
     
     <!-- 引入 Liquid Glass UI -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/liquid-glass-ui@latest/dist/liquid-glass-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
     
     <style>
         body {
@@ -175,7 +175,7 @@ Liquid Glass UI 组件默认支持响应式设计，您可以使用CSS Grid或Fl
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liquid Glass UI 示例</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/liquid-glass-ui@latest/dist/liquid-glass-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
     <style>
         body {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

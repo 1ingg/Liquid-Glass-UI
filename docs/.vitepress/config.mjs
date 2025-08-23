@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/' },
-      { text: '组件', link: '/components/' },
+      { text: '组件', link: '/components/button' },
       { text: '示例', link: '/examples/' }
     ],
 
@@ -33,12 +33,6 @@ export default defineConfig({
         }
       ],
       '/components/': [
-        {
-          text: '组件总览',
-          items: [
-            { text: '所有组件', link: '/components/' }
-          ]
-        },
         {
           text: '基础组件',
           items: [
@@ -69,7 +63,6 @@ export default defineConfig({
         {
           text: '导航组件',
           items: [
-            { text: '导航栏 Navigation', link: '/components/navigation' },
             { text: '标签页 Tabs', link: '/components/tabs' },
             { text: '面包屑 Breadcrumb', link: '/components/breadcrumb' },
             { text: '分页 Pagination', link: '/components/pagination' }
@@ -93,13 +86,13 @@ export default defineConfig({
       ]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/liquid-glass-ui/liquid-glass-ui' }
-    ],
+            socialLinks: [
+          { icon: 'github', link: 'https://github.com/1ingg/Liquid-Glass-UI' }
+        ],
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024 Liquid Glass UI Team'
+      copyright: 'Copyright © 2025 Liquid Glass UI'
     },
 
     search: {

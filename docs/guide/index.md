@@ -41,9 +41,8 @@ Liquid Glass UI 支持所有现代浏览器：
 
 ## 社区与支持
 
-- [GitHub 仓库](https://github.com/liquid-glass-ui/liquid-glass-ui)
-- [问题反馈](https://github.com/liquid-glass-ui/liquid-glass-ui/issues)
-- [讨论区](https://github.com/liquid-glass-ui/liquid-glass-ui/discussions)
+- [GitHub 仓库](https://github.com/1ingg/Liquid-Glass-UI)
+- [问题反馈](https://github.com/1ingg/Liquid-Glass-UI/issues)
 
 ## 开源协议
 

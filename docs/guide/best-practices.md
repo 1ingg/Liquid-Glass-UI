@@ -532,7 +532,7 @@ npx postcss liquid-glass-ui.css --use autoprefixer cssnano --output liquid-glass
 
 ```html
 <!-- 使用特定版本以确保稳定性 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/liquid-glass-ui@1.0.0/dist/liquid-glass-ui.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@1.0.1/liquid-glass-ui.min.css">
 ```
 
 ### 3. 监控使用情况

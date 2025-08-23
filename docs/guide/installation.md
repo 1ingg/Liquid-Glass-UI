@@ -7,13 +7,13 @@ Liquid Glass UI 提供多种安装方式，您可以根据项目需求选择最�
 这是最简单的使用方式，只需在HTML文件的 `<head>` 标签中添加以下代码：
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/liquid-glass-ui@latest/dist/liquid-glass-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
 ```
 
 ::: tip 推荐
 推荐使用指定版本号的CDN链接，以确保项目的稳定性：
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/liquid-glass-ui@1.0.0/dist/liquid-glass-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@1.0.1/liquid-glass-ui.css">
 ```
 :::
 
@@ -22,19 +22,19 @@ Liquid Glass UI 提供多种安装方式，您可以根据项目需求选择最�
 如果您使用构建工具（如 Webpack、Vite 等），可以通过 NPM 安装：
 
 ```bash
-npm install liquid-glass-ui
+npm install @1ing/liquid-glass-ui
 ```
 
 然后在您的CSS或JavaScript文件中引入：
 
 ```css
-@import 'liquid-glass-ui/dist/liquid-glass-ui.css';
+@import '@1ing/liquid-glass-ui/liquid-glass-ui.css';
 ```
 
 或者在JavaScript中：
 
 ```javascript
-import 'liquid-glass-ui/dist/liquid-glass-ui.css'
+import '@1ing/liquid-glass-ui/liquid-glass-ui.css'
 ```
 
 ## Yarn 安装
@@ -42,7 +42,7 @@ import 'liquid-glass-ui/dist/liquid-glass-ui.css'
 如果您使用 Yarn 包管理器：
 
 ```bash
-yarn add liquid-glass-ui
+yarn add @1ing/liquid-glass-ui
 ```
 
 ## 下载本地文件
@@ -91,7 +91,7 @@ body {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liquid Glass UI 测试</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/liquid-glass-ui@latest/dist/liquid-glass-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
     <style>
         body {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

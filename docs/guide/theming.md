@@ -2,6 +2,8 @@
 
 Liquid Glass UI 提供了强大的主题定制系统，您可以通过CSS变量轻松自定义组件的外观，创建符合品牌风格的独特设计。
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
+
 ## CSS 变量系统
 
 Liquid Glass UI 使用CSS自定义属性（CSS变量）来管理主题样式，所有变量都定义在 `:root` 选择器中。
@@ -48,7 +50,7 @@ Liquid Glass UI 使用CSS自定义属性（CSS变量）来管理主题样式，�
 
 <div class="theme-preview" data-theme="default">
   <button class="glass-button primary">主要按钮</button>
-  <input type="text" class="glass-input" placeholder="输入框示例">
+  <input type="text" class="glass-input" placeholder="输入框示例" />
   <span class="glass-badge primary">徽章示例</span>
 </div>
 
@@ -63,7 +65,7 @@ Liquid Glass UI 使用CSS自定义属性（CSS变量）来管理主题样式，�
 
 <div class="theme-preview" data-theme="purple">
   <button class="glass-button primary">主要按钮</button>
-  <input type="text" class="glass-input" placeholder="输入框示例">
+  <input type="text" class="glass-input" placeholder="输入框示例" />
   <span class="glass-badge primary">徽章示例</span>
 </div>
 
@@ -78,7 +80,7 @@ Liquid Glass UI 使用CSS自定义属性（CSS变量）来管理主题样式，�
 
 <div class="theme-preview" data-theme="green">
   <button class="glass-button primary">主要按钮</button>
-  <input type="text" class="glass-input" placeholder="输入框示例">
+  <input type="text" class="glass-input" placeholder="输入框示例" />
   <span class="glass-badge primary">徽章示例</span>
 </div>
 
@@ -93,7 +95,7 @@ Liquid Glass UI 使用CSS自定义属性（CSS变量）来管理主题样式，�
 
 <div class="theme-preview" data-theme="orange">
   <button class="glass-button primary">主要按钮</button>
-  <input type="text" class="glass-input" placeholder="输入框示例">
+  <input type="text" class="glass-input" placeholder="输入框示例" />
   <span class="glass-badge primary">徽章示例</span>
 </div>
 
@@ -108,7 +110,7 @@ Liquid Glass UI 使用CSS自定义属性（CSS变量）来管理主题样式，�
 
 <div class="theme-preview" data-theme="pink">
   <button class="glass-button primary">主要按钮</button>
-  <input type="text" class="glass-input" placeholder="输入框示例">
+  <input type="text" class="glass-input" placeholder="输入框示例" />
   <span class="glass-badge primary">徽章示例</span>
 </div>
 
@@ -422,32 +424,66 @@ document.addEventListener('DOMContentLoaded', function() {
 .theme-preview {
   padding: 24px;
   margin: 16px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 12px;
   display: flex;
   gap: 16px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
+/* 确保组件继承主题变量 */
+.theme-preview * {
+  font-family: inherit;
+}
+
+/* 默认主题（蓝色） */
+.theme-preview[data-theme="default"] {
+  background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+  --glass-primary: rgba(74, 144, 226, 0.8);
+  --glass-primary-light: rgba(74, 144, 226, 0.3);
+}
+
+/* 紫色主题 */
 .theme-preview[data-theme="purple"] {
+  background: linear-gradient(135deg, #9333EA 0%, #7C3AED 100%);
   --glass-primary: rgba(147, 51, 234, 0.8);
   --glass-primary-light: rgba(147, 51, 234, 0.3);
 }
 
+/* 绿色主题 */
 .theme-preview[data-theme="green"] {
+  background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
   --glass-primary: rgba(34, 197, 94, 0.8);
   --glass-primary-light: rgba(34, 197, 94, 0.3);
 }
 
+/* 橙色主题 */
 .theme-preview[data-theme="orange"] {
+  background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
   --glass-primary: rgba(249, 115, 22, 0.8);
   --glass-primary-light: rgba(249, 115, 22, 0.3);
 }
 
+/* 粉色主题 */
 .theme-preview[data-theme="pink"] {
+  background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);
   --glass-primary: rgba(236, 72, 153, 0.8);
   --glass-primary-light: rgba(236, 72, 153, 0.3);
+}
+
+/* 确保组件在预览容器中正确显示 */
+.theme-preview .glass-button {
+  margin: 0;
+}
+
+.theme-preview .glass-input {
+  margin: 0;
+  min-width: 200px;
+}
+
+.theme-preview .glass-badge {
+  margin: 0;
 }
 </style> 
