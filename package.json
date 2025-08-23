@@ -1,6 +1,6 @@
 {
   "name": "@1ing/liquid-glass-ui",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "现代液态玻璃UI组件库 - 轻量级、无依赖、响应式",
   "main": "liquid-glass-ui.css",
   "style": "liquid-glass-ui.css",
