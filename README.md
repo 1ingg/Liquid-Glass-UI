@@ -6,7 +6,7 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/@1ing/liquid-glass-ui.svg)](https://www.npmjs.com/package/@1ing/liquid-glass-ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## ✨ 特性
+## 特性
 
 - **液态玻璃效果** - 半透明毛玻璃质感
 - **多主题支持** - 深色/浅色主题自动适配
@@ -17,7 +17,7 @@
 ## 演示站
 [https://demo.liquidglassui.cc/](https://demo.liquidglassui.cc/)
 
-## 🚀 快速开始
+## 快速开始
 
 ### 安装
 
@@ -68,7 +68,7 @@ npm install @1ing/liquid-glass-ui
 </div>
 ```
 
-## 🎨 完整组件
+## 完整组件
 
 **基础**: 按钮、输入框、文本域、卡片  
 **表单**: 选择器、复选框、单选框、开关、时间选择器  
@@ -76,15 +76,15 @@ npm install @1ing/liquid-glass-ui
 **导航**: 标签页、导航栏、面包屑、分页  
 **反馈**: 模态框、通知、工具提示
 
-## 📚 文档
+## 文档
 
 完整文档：[https://liquidglassui.cc/](https://liquidglassui.cc/)
 
-## 🎯 浏览器支持
+## 浏览器支持
 
 Chrome 88+ | Firefox 84+ | Safari 14+ | Edge 88+
 
-## 📄 许可证
+## 许可证
 
 [MIT License](LICENSE) © 2024 Liquid Glass UI Team
 
