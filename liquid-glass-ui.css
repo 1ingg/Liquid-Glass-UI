@@ -57,86 +57,219 @@
     
     --lgui-blur: blur(15px);
     --lgui-blur-strong: blur(25px);
+    
+    /* 页面背景变量 */
+    --lgui-page-bg: #2a1f3d;
 }
 
-/* 浅色主题变量 */
-.lgui-light {
+/* 浅色主题变量 - 真正的液态玻璃效果在浅色背景上 */
+.lgui-light,
+.lgui-light-components {
     --lgui-text-primary: rgba(30, 30, 30, 0.95);
-    --lgui-text-secondary: rgba(60, 60, 60, 0.85);
-    --lgui-text-muted: rgba(100, 100, 100, 0.7);
-    --lgui-text-placeholder: rgba(120, 120, 120, 0.6);
+    --lgui-text-secondary: rgba(60, 60, 60, 0.8);
+    --lgui-text-muted: rgba(100, 100, 100, 0.6);
+    --lgui-text-placeholder: rgba(120, 120, 120, 0.5);
     
-    --lgui-bg-primary: rgba(255, 255, 255, 0.8);
-    --lgui-bg-secondary: rgba(255, 255, 255, 0.6);
-    --lgui-bg-hover: rgba(255, 255, 255, 0.9);
-    --lgui-bg-active: rgba(255, 255, 255, 0.95);
+    --lgui-bg-primary: rgba(255, 255, 255, 0.25);
+    --lgui-bg-secondary: rgba(255, 255, 255, 0.15);
+    --lgui-bg-hover: rgba(255, 255, 255, 0.35);
+    --lgui-bg-active: rgba(255, 255, 255, 0.45);
     
-    --lgui-border-primary: rgba(0, 0, 0, 0.15);
-    --lgui-border-secondary: rgba(0, 0, 0, 0.1);
-    --lgui-border-hover: rgba(0, 0, 0, 0.2);
+    --lgui-border-primary: rgba(0, 0, 0, 0.12);
+    --lgui-border-secondary: rgba(0, 0, 0, 0.08);
+    --lgui-border-hover: rgba(0, 0, 0, 0.18);
     --lgui-border-focus: rgba(74, 144, 226, 0.6);
     
-    --lgui-shadow-primary: 0 8px 25px rgba(0, 0, 0, 0.1);
-    --lgui-shadow-hover: 0 12px 35px rgba(0, 0, 0, 0.15);
-    --lgui-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    --lgui-shadow-primary: 
+        0 -4px 15px rgba(0, 0, 0, 0.22),
+        0 -8px 30px rgba(0, 0, 0, 0.3);
+    --lgui-shadow-hover: 
+        0 -6px 20px rgba(0, 0, 0, 0.3),
+        0 -12px 40px rgba(0, 0, 0, 0.4);
+    --lgui-shadow-inset: inset 0 1px 0 rgba(0, 0, 0, 0.08);
     
-    --lgui-primary: rgba(74, 144, 226, 0.9);
-    --lgui-primary-bg: rgba(74, 144, 226, 0.15);
-    --lgui-primary-border: rgba(74, 144, 226, 0.4);
-    --lgui-primary-glow: rgba(74, 144, 226, 0.1);
+    --lgui-primary: rgba(74, 144, 226, 1);
+    --lgui-primary-bg: rgba(74, 144, 226, 0.3);
+    --lgui-primary-border: rgba(74, 144, 226, 0.6);
+    --lgui-primary-glow: rgba(74, 144, 226, 0.3);
     
-    --lgui-success: rgba(34, 197, 94, 0.9);
-    --lgui-success-bg: rgba(34, 197, 94, 0.15);
-    --lgui-success-border: rgba(34, 197, 94, 0.3);
+    --lgui-success: rgba(34, 197, 94, 1);
+    --lgui-success-bg: rgba(34, 197, 94, 0.25);
+    --lgui-success-border: rgba(34, 197, 94, 0.5);
     
-    --lgui-warning: rgba(251, 191, 36, 0.9);
-    --lgui-warning-bg: rgba(251, 191, 36, 0.15);
-    --lgui-warning-border: rgba(251, 191, 36, 0.3);
+    --lgui-warning: rgba(251, 191, 36, 1);
+    --lgui-warning-bg: rgba(251, 191, 36, 0.25);
+    --lgui-warning-border: rgba(251, 191, 36, 0.5);
     
-    --lgui-error: rgba(239, 68, 68, 0.9);
-    --lgui-error-bg: rgba(239, 68, 68, 0.15);
-    --lgui-error-border: rgba(239, 68, 68, 0.3);
+    --lgui-error: rgba(239, 68, 68, 1);
+    --lgui-error-bg: rgba(239, 68, 68, 0.25);
+    --lgui-error-border: rgba(239, 68, 68, 0.5);
+    
+    /* 浅色主题页面背景 */
+    --lgui-page-bg: #f8fafc;
+}
+
+/* 深色主题变量 */
+.lgui-dark,
+.lgui-dark-components {
+    --lgui-text-primary: rgba(255, 255, 255, 0.95);
+    --lgui-text-secondary: rgba(255, 255, 255, 0.8);
+    --lgui-text-muted: rgba(255, 255, 255, 0.6);
+    --lgui-text-placeholder: rgba(255, 255, 255, 0.5);
+    
+    --lgui-bg-primary: rgba(255, 255, 255, 0.08);
+    --lgui-bg-secondary: rgba(255, 255, 255, 0.05);
+    --lgui-bg-hover: rgba(255, 255, 255, 0.12);
+    --lgui-bg-active: rgba(255, 255, 255, 0.15);
+    
+    --lgui-border-primary: rgba(255, 255, 255, 0.2);
+    --lgui-border-secondary: rgba(255, 255, 255, 0.15);
+    --lgui-border-hover: rgba(255, 255, 255, 0.3);
+    --lgui-border-focus: rgba(74, 144, 226, 0.5);
+    
+    --lgui-shadow-primary: 0 8px 25px rgba(0, 0, 0, 0.3);
+    --lgui-shadow-hover: 0 12px 35px rgba(0, 0, 0, 0.4);
+    --lgui-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    
+    --lgui-primary: rgba(74, 144, 226, 0.8);
+    --lgui-primary-bg: rgba(74, 144, 226, 0.3);
+    --lgui-primary-border: rgba(74, 144, 226, 0.5);
+    --lgui-primary-glow: rgba(74, 144, 226, 0.2);
+    
+    --lgui-success: rgba(34, 197, 94, 0.8);
+    --lgui-success-bg: rgba(34, 197, 94, 0.2);
+    --lgui-success-border: rgba(34, 197, 94, 0.4);
+    
+    --lgui-warning: rgba(251, 191, 36, 0.8);
+    --lgui-warning-bg: rgba(251, 191, 36, 0.2);
+    --lgui-warning-border: rgba(251, 191, 36, 0.4);
+    
+    --lgui-error: rgba(239, 68, 68, 0.8);
+    --lgui-error-bg: rgba(239, 68, 68, 0.2);
+    --lgui-error-border: rgba(239, 68, 68, 0.4);
+    
+    /* 深色主题页面背景 */
+    --lgui-page-bg: #2a1f3d;
 }
 
 /* 自动检测主题 */
 @media (prefers-color-scheme: light) {
-    .lgui-auto {
+    .lgui-auto,
+    .lgui-auto-components {
         --lgui-text-primary: rgba(30, 30, 30, 0.95);
-        --lgui-text-secondary: rgba(60, 60, 60, 0.85);
-        --lgui-text-muted: rgba(100, 100, 100, 0.7);
-        --lgui-text-placeholder: rgba(120, 120, 120, 0.6);
+        --lgui-text-secondary: rgba(60, 60, 60, 0.8);
+        --lgui-text-muted: rgba(100, 100, 100, 0.6);
+        --lgui-text-placeholder: rgba(120, 120, 120, 0.5);
         
-        --lgui-bg-primary: rgba(255, 255, 255, 0.8);
-        --lgui-bg-secondary: rgba(255, 255, 255, 0.6);
-        --lgui-bg-hover: rgba(255, 255, 255, 0.9);
-        --lgui-bg-active: rgba(255, 255, 255, 0.95);
+        /* 表单控件文本颜色 - 浅色主题下使用深色文字 */
+        --lgui-form-text: rgba(30, 30, 30, 0.95);
+        --lgui-form-placeholder: rgba(100, 100, 100, 0.7);
         
-        --lgui-border-primary: rgba(0, 0, 0, 0.15);
-        --lgui-border-secondary: rgba(0, 0, 0, 0.1);
-        --lgui-border-hover: rgba(0, 0, 0, 0.2);
+        --lgui-bg-primary: rgba(255, 255, 255, 0.25);
+        --lgui-bg-secondary: rgba(255, 255, 255, 0.15);
+        --lgui-bg-hover: rgba(255, 255, 255, 0.35);
+        --lgui-bg-active: rgba(255, 255, 255, 0.45);
+        
+        --lgui-border-primary: rgba(0, 0, 0, 0.12);
+        --lgui-border-secondary: rgba(0, 0, 0, 0.08);
+        --lgui-border-hover: rgba(0, 0, 0, 0.18);
         --lgui-border-focus: rgba(74, 144, 226, 0.6);
         
-        --lgui-shadow-primary: 0 8px 25px rgba(0, 0, 0, 0.1);
-        --lgui-shadow-hover: 0 12px 35px rgba(0, 0, 0, 0.15);
-        --lgui-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        --lgui-shadow-primary: 
+            0 -4px 15px rgba(0, 0, 0, 0.22),
+            0 -8px 30px rgba(0, 0, 0, 0.3);
+        --lgui-shadow-hover: 
+            0 -6px 20px rgba(0, 0, 0, 0.3),
+            0 -12px 40px rgba(0, 0, 0, 0.4);
+        --lgui-shadow-inset: inset 0 1px 0 rgba(0, 0, 0, 0.08);
         
-        --lgui-primary: rgba(74, 144, 226, 0.9);
-        --lgui-primary-bg: rgba(74, 144, 226, 0.15);
-        --lgui-primary-border: rgba(74, 144, 226, 0.4);
-        --lgui-primary-glow: rgba(74, 144, 226, 0.1);
+        --lgui-primary: rgba(74, 144, 226, 1);
+        --lgui-primary-bg: rgba(74, 144, 226, 0.3);
+        --lgui-primary-border: rgba(74, 144, 226, 0.6);
+        --lgui-primary-glow: rgba(74, 144, 226, 0.3);
         
-        --lgui-success: rgba(34, 197, 94, 0.9);
-        --lgui-success-bg: rgba(34, 197, 94, 0.15);
-        --lgui-success-border: rgba(34, 197, 94, 0.3);
+        --lgui-success: rgba(34, 197, 94, 1);
+        --lgui-success-bg: rgba(34, 197, 94, 0.25);
+        --lgui-success-border: rgba(34, 197, 94, 0.5);
         
-        --lgui-warning: rgba(251, 191, 36, 0.9);
-        --lgui-warning-bg: rgba(251, 191, 36, 0.15);
-        --lgui-warning-border: rgba(251, 191, 36, 0.3);
+        --lgui-warning: rgba(251, 191, 36, 1);
+        --lgui-warning-bg: rgba(251, 191, 36, 0.25);
+        --lgui-warning-border: rgba(251, 191, 36, 0.5);
         
-        --lgui-error: rgba(239, 68, 68, 0.9);
-        --lgui-error-bg: rgba(239, 68, 68, 0.15);
-        --lgui-error-border: rgba(239, 68, 68, 0.3);
+        --lgui-error: rgba(239, 68, 68, 1);
+        --lgui-error-bg: rgba(239, 68, 68, 0.25);
+        --lgui-error-border: rgba(239, 68, 68, 0.5);
+        
+        /* 自动检测浅色主题页面背景 */
+        --lgui-page-bg: #f8fafc;
     }
+}
+
+/* ==================== 页面背景主题 ==================== */
+body.lgui-dark,
+body.lgui-light,
+body.lgui-auto {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--lgui-page-bg);
+    transition: background 0.5s ease;
+}
+
+/* 如果只想要组件主题而不要页面背景，使用 lgui-*-components 类 */
+body.lgui-dark-components,
+body.lgui-light-components,
+body.lgui-auto-components {
+    /* 仅应用组件主题变量，不设置页面背景 */
+}
+
+/* ==================== 特殊背景主题 ==================== */
+/* 液态玻璃渐变背景 */
+body.lgui-dark.lgui-glass-bg {
+    --lgui-page-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.lgui-light.lgui-glass-bg {
+    --lgui-page-bg: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+/* 深蓝渐变背景 */
+body.lgui-dark.lgui-blue-bg {
+    --lgui-page-bg: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+}
+
+/* 夜空渐变背景 */
+body.lgui-dark.lgui-night-bg {
+    --lgui-page-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* 不同深度的深色背景选项 */
+body.lgui-dark.lgui-light-dark {
+    --lgui-page-bg: #3d3654; /* 更浅的黑紫色 */
+}
+
+body.lgui-dark.lgui-medium-dark {
+    --lgui-page-bg: #2a1f3d; /* 中等黑紫色（默认） */
+}
+
+body.lgui-dark.lgui-deep-dark {
+    --lgui-page-bg: #1e1528; /* 更深的黑紫色 */
+}
+
+/* 不同浅色背景选项 */
+body.lgui-light.lgui-warm-light {
+    --lgui-page-bg: #fefdf8; /* 温暖的米白色 */
+}
+
+body.lgui-light.lgui-cool-light {
+    --lgui-page-bg: #f8fafc; /* 冷色调浅灰色（默认） */
+}
+
+body.lgui-light.lgui-soft-light {
+    --lgui-page-bg: #f1f5f9; /* 柔和的浅灰色 */
+}
+
+body.lgui-light.lgui-cream-light {
+    --lgui-page-bg: #fefce8; /* 奶油色 */
 }
 
 /* 基础动画 */
@@ -339,36 +472,36 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 20px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 12px;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: var(--lgui-blur);
+    -webkit-backdrop-filter: var(--lgui-blur);
     box-shadow: 
         inset 0 2px 4px rgba(0, 0, 0, 0.1),
-        0 4px 20px rgba(0, 0, 0, 0.2);
+        var(--lgui-shadow-primary);
     cursor: pointer;
     transition: all 0.3s ease;
     min-height: 48px;
 }
 
 .select-trigger:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--lgui-bg-hover);
+    border-color: var(--lgui-border-hover);
     transform: translateY(-1px);
 }
 
 .glass-select.active .select-trigger {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(74, 144, 226, 0.5);
+    background: var(--lgui-bg-active);
+    border-color: var(--lgui-border-focus);
     box-shadow: 
         inset 0 2px 4px rgba(0, 0, 0, 0.1),
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        0 0 0 2px rgba(74, 144, 226, 0.2);
+        var(--lgui-shadow-hover),
+        0 0 0 2px var(--lgui-primary-glow);
 }
 
 .select-value {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
     font-size: 14px;
     flex: 1;
     text-align: left;
@@ -376,7 +509,7 @@
 
 .glass-select[data-placeholder] .select-value:empty::before {
     content: attr(data-placeholder);
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--lgui-text-placeholder);
 }
 
 .select-arrow {
@@ -392,7 +525,7 @@
 .select-arrow svg {
     width: 16px;
     height: 16px;
-    fill: rgba(255, 255, 255, 0.7);
+    fill: var(--lgui-text-secondary);
     transition: fill 0.3s ease;
 }
 
@@ -401,7 +534,7 @@
 }
 
 .glass-select.active .select-arrow svg {
-    fill: rgba(74, 144, 226, 0.8);
+    fill: var(--lgui-primary);
 }
 
 .select-dropdown {
@@ -409,14 +542,14 @@
     top: calc(100% + 8px);
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 16px;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: var(--lgui-blur-strong);
+    -webkit-backdrop-filter: var(--lgui-blur-strong);
     box-shadow: 
-        0 16px 40px rgba(0, 0, 0, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        var(--lgui-shadow-hover),
+        var(--lgui-shadow-inset);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px) scale(0.95);
@@ -450,25 +583,25 @@
 }
 
 .select-option:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--lgui-bg-hover);
     transform: translateX(4px);
 }
 
 .select-option.selected {
-    background: rgba(74, 144, 226, 0.2);
-    border: 1px solid rgba(74, 144, 226, 0.3);
+    background: var(--lgui-primary-bg);
+    border: 1px solid var(--lgui-primary-border);
 }
 
 .select-option.selected::after {
     content: '✓';
     position: absolute;
     right: 16px;
-    color: rgba(74, 144, 226, 0.9);
+    color: var(--lgui-primary);
     font-weight: bold;
 }
 
 .option-text {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
     font-size: 14px;
     font-weight: 500;
     flex: 1;
@@ -479,11 +612,13 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
     font-size: 14px;
     gap: 10px;
     position: relative;
 }
+
+
 
 .glass-checkbox input {
     display: none;
@@ -492,8 +627,8 @@
 .checkmark {
     width: 18px;
     height: 18px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.3s ease;
@@ -503,8 +638,8 @@
 }
 
 .glass-checkbox input:checked ~ .checkmark {
-    background: rgba(74, 144, 226, 0.3);
-    border-color: rgba(74, 144, 226, 0.6);
+    background: var(--lgui-primary-bg);
+    border-color: var(--lgui-primary-border);
 }
 
 .checkmark::after {
@@ -515,7 +650,7 @@
     top: 2px;
     width: 5px;
     height: 10px;
-    border: solid rgba(255, 255, 255, 0.9);
+    border: solid var(--lgui-text-primary);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
@@ -529,11 +664,13 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
     font-size: 14px;
     gap: 10px;
     position: relative;
 }
+
+
 
 .glass-radio input {
     display: none;
@@ -542,8 +679,8 @@
 .radiomark {
     width: 18px;
     height: 18px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.3s ease;
@@ -553,8 +690,8 @@
 }
 
 .glass-radio input:checked ~ .radiomark {
-    background: rgba(74, 144, 226, 0.3);
-    border-color: rgba(74, 144, 226, 0.6);
+    background: var(--lgui-primary-bg);
+    border-color: var(--lgui-primary-border);
 }
 
 .radiomark::after {
@@ -565,7 +702,7 @@
     top: 50%;
     width: 8px;
     height: 8px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--lgui-text-primary);
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
@@ -590,8 +727,8 @@
 .switch-slider {
     width: 50px;
     height: 26px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-secondary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 13px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -607,15 +744,15 @@
     left: 2px;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--lgui-text-primary);
     border-radius: 50%;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .glass-switch input:checked + .switch-slider {
-    background: rgba(74, 144, 226, 0.3);
-    border-color: rgba(74, 144, 226, 0.5);
+    background: var(--lgui-primary-bg);
+    border-color: var(--lgui-primary-border);
 }
 
 .glass-switch input:checked + .switch-slider::before {
@@ -623,24 +760,26 @@
 }
 
 .switch-label {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
     font-size: 14px;
 }
+
+
 
 /* ==================== 进度条组件 ==================== */
 .glass-progress {
     width: 100%;
     height: 12px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 8px;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: var(--lgui-blur);
+    -webkit-backdrop-filter: var(--lgui-blur);
     overflow: hidden;
     position: relative;
     box-shadow: 
         inset 0 2px 4px rgba(0, 0, 0, 0.1),
-        0 4px 15px rgba(0, 0, 0, 0.2);
+        var(--lgui-shadow-primary);
 }
 
 .progress-track {
@@ -704,8 +843,8 @@
 .glass-loader.spinner .spinner-ring {
     width: 100%;
     height: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-top-color: rgba(74, 144, 226, 0.8);
+    border: 2px solid var(--lgui-border-secondary);
+    border-top-color: var(--lgui-primary);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -722,11 +861,11 @@
 .glass-nav {
     display: flex;
     gap: 5px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--lgui-bg-secondary);
+    border: 1px solid var(--lgui-border-secondary);
     border-radius: 16px;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: var(--lgui-blur);
+    -webkit-backdrop-filter: var(--lgui-blur);
     padding: 8px;
     width: 100%;
     max-width: 280px;
@@ -734,7 +873,7 @@
 
 .nav-item {
     padding: 10px 16px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--lgui-text-secondary);
     font-size: 14px;
     border-radius: 10px;
     cursor: pointer;
@@ -745,14 +884,19 @@
 }
 
 .nav-item:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.9);
+    background: var(--lgui-bg-hover);
+    color: var(--lgui-text-primary);
 }
 
 .nav-item.active {
-    background: rgba(74, 144, 226, 0.3);
-    color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(74, 144, 226, 0.5);
+    background: var(--lgui-bg-active);
+    color: var(--lgui-text-primary);
+    border: 1px solid var(--lgui-border-hover);
+    box-shadow: 
+        var(--lgui-shadow-inset),
+        0 2px 8px rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+    font-weight: 600;
 }
 
 /* ==================== 标签页组件 ==================== */
@@ -763,8 +907,8 @@
 
 .tab-header {
     display: flex;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--lgui-bg-secondary);
+    border: 1px solid var(--lgui-border-secondary);
     border-radius: 12px;
     padding: 4px;
     margin-bottom: 15px;
@@ -772,7 +916,7 @@
 
 .tab-item {
     padding: 8px 16px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--lgui-text-secondary);
     font-size: 13px;
     border-radius: 8px;
     cursor: pointer;
@@ -782,20 +926,26 @@
 }
 
 .tab-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.9);
+    background: var(--lgui-bg-hover);
+    color: var(--lgui-text-primary);
 }
 
 .tab-item.active {
-    background: rgba(255, 255, 255, 0.15);
-    color: rgba(255, 255, 255, 0.95);
+    background: var(--lgui-bg-active);
+    color: var(--lgui-text-primary);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--lgui-border-hover);
+    box-shadow: 
+        var(--lgui-shadow-inset),
+        0 2px 8px rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+    font-weight: 600;
 }
 
 .tab-content {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--lgui-bg-secondary);
+    border: 1px solid var(--lgui-border-secondary);
     border-radius: 12px;
     padding: 20px;
     backdrop-filter: blur(10px);
@@ -804,7 +954,7 @@
 
 .tab-pane {
     display: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--lgui-text-secondary);
     font-size: 14px;
     line-height: 1.5;
 }
@@ -822,8 +972,8 @@
 .slider-input {
     width: 100%;
     height: 6px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-secondary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 3px;
     outline: none;
     appearance: none;
@@ -835,8 +985,8 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background: rgba(74, 144, 226, 0.8);
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    background: var(--lgui-primary);
+    border: 2px solid var(--lgui-text-primary);
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -847,8 +997,8 @@
 .slider-input::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: rgba(74, 144, 226, 0.8);
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    background: var(--lgui-primary);
+    border: 2px solid var(--lgui-text-primary);
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -982,12 +1132,12 @@
 
 .page-btn {
     padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 8px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--lgui-text-secondary);
     font-size: 13px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -997,16 +1147,16 @@
 }
 
 .page-btn:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.95);
+    background: var(--lgui-bg-hover);
+    border-color: var(--lgui-border-hover);
+    color: var(--lgui-text-primary);
     transform: translateY(-1px);
 }
 
 .page-btn.active {
-    background: rgba(74, 144, 226, 0.3);
-    border-color: rgba(74, 144, 226, 0.5);
-    color: rgba(255, 255, 255, 0.95);
+    background: var(--lgui-primary-bg);
+    border-color: var(--lgui-primary-border);
+    color: var(--lgui-text-primary);
 }
 
 .page-btn:disabled {
@@ -1019,8 +1169,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--lgui-bg-secondary);
+    border: 1px solid var(--lgui-border-secondary);
     border-radius: 12px;
     padding: 12px 16px;
     backdrop-filter: blur(10px);
@@ -1028,23 +1178,23 @@
 }
 
 .breadcrumb-item {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--lgui-text-secondary);
     text-decoration: none;
     font-size: 13px;
     transition: color 0.3s ease;
 }
 
 .breadcrumb-item:hover {
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--lgui-text-primary);
 }
 
 .breadcrumb-item.active {
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--lgui-text-primary);
     font-weight: 500;
 }
 
 .breadcrumb-divider {
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--lgui-text-muted);
     font-size: 12px;
 }
 
@@ -1052,10 +1202,10 @@
 .glass-textarea {
     width: 100%;
     padding: 16px 20px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 12px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
     font-size: 14px;
     font-weight: 400;
     font-family: inherit;
@@ -1063,8 +1213,8 @@
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     box-shadow: 
-        0 4px 15px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        var(--lgui-shadow-primary),
+        var(--lgui-shadow-inset);
     transition: all 0.3s ease;
     outline: none;
     resize: vertical;
@@ -1072,22 +1222,22 @@
 }
 
 .glass-textarea::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--lgui-form-placeholder);
     font-weight: 300;
 }
 
 .glass-textarea:focus {
-    border-color: rgba(74, 144, 226, 0.5);
+    border-color: var(--lgui-border-focus);
     box-shadow: 
-        0 4px 15px rgba(0, 0, 0, 0.1),
-        0 0 0 3px rgba(74, 144, 226, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15);
-    background: rgba(255, 255, 255, 0.12);
+        var(--lgui-shadow-hover),
+        0 0 0 3px var(--lgui-primary-glow),
+        var(--lgui-shadow-inset);
+    background: var(--lgui-bg-hover);
 }
 
 .glass-textarea:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--lgui-border-hover);
+    background: var(--lgui-bg-hover);
 }
 
 /* ==================== 通知组件 ==================== */
@@ -1096,19 +1246,12 @@
     align-items: center;
     gap: 12px;
     padding: 16px 20px;
-    background: linear-gradient(145deg, 
-        rgba(255, 255, 255, 0.12) 0%,
-        rgba(255, 255, 255, 0.08) 50%,
-        rgba(255, 255, 255, 0.06) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 16px;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-    box-shadow: 
-        0 12px 40px rgba(0, 0, 0, 0.15),
-        0 6px 20px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
-        0 0 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: var(--lgui-shadow-primary);
     min-width: 300px;
     max-width: 400px;
     position: relative;
@@ -1128,7 +1271,7 @@
 }
 
 .notification-title {
-    color: rgba(255, 255, 255, 0.98);
+    color: var(--lgui-text-primary);
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.3px;
@@ -1137,7 +1280,7 @@
 }
 
 .notification-message {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--lgui-text-secondary);
     font-size: 14px;
     font-weight: 400;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -1147,9 +1290,11 @@
     flex: 1;
 }
 
+
+
 .notification-close {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 8px;
     width: 28px;
     height: 28px;
@@ -1157,7 +1302,7 @@
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--lgui-text-secondary);
     cursor: pointer;
     transition: all 0.2s ease;
     flex-shrink: 0;
@@ -1168,24 +1313,26 @@
 }
 
 .notification-close:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.25);
-    color: rgba(255, 255, 255, 0.9);
+    background: var(--lgui-bg-hover);
+    border-color: var(--lgui-border-hover);
+    color: var(--lgui-text-primary);
     transform: scale(1.05);
 }
+
+
 
 /* ==================== 徽章组件 ==================== */
 .glass-badge {
     padding: 6px 12px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 16px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 
-        0 4px 15px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.85);
+        var(--lgui-shadow-primary),
+        var(--lgui-shadow-inset);
+    color: var(--lgui-text-secondary);
     font-size: 11px;
     font-weight: 500;
     text-transform: uppercase;
@@ -1197,8 +1344,8 @@
 }
 
 .glass-badge:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--lgui-bg-hover);
+    border-color: var(--lgui-border-hover);
     transform: translateY(-1px);
 }
 
@@ -1311,17 +1458,17 @@
 .time-display {
     width: 100%;
     padding: 12px 40px 12px 16px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 12px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
     font-size: 14px;
     font-weight: 500;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     box-shadow: 
-        0 4px 15px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        var(--lgui-shadow-primary),
+        var(--lgui-shadow-inset);
     transition: all 0.3s ease;
     cursor: pointer;
     display: flex;
@@ -1342,16 +1489,14 @@
     left: 0;
     right: 0;
     margin-top: 8px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: var(--lgui-bg-primary);
+    border: 1px solid var(--lgui-border-primary);
     border-radius: 16px;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     box-shadow: 
-        0 20px 60px rgba(0, 0, 0, 0.3),
-        0 8px 30px rgba(0, 0, 0, 0.2),
-        inset 0 2px 0 rgba(255, 255, 255, 0.2),
-        0 0 0 1px rgba(255, 255, 255, 0.1);
+        var(--lgui-shadow-hover),
+        var(--lgui-shadow-inset);
     padding: 20px;
     display: none;
     z-index: 1000;
@@ -1368,21 +1513,21 @@
 
 /* ==================== 实用工具类 ==================== */
 .glass-container {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--lgui-bg-secondary);
     border-radius: 16px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--lgui-border-secondary);
     padding: 20px;
     margin: 10px 0;
 }
 
 .glass-text {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--lgui-text-primary);
 }
 
 .glass-text-muted {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--lgui-text-muted);
 }
 
 .glass-text-primary {
