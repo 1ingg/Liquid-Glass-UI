@@ -75,7 +75,7 @@ npm install @1ing/liquid-glass-ui
 
 ## 📚 文档
 
-完整文档：[https://1ingg.github.io/Liquid-Glass-UI/](https://1ingg.github.io/Liquid-Glass-UI/)
+完整文档：[https://liquidglass.yinxh.fun/](https://liquidglass.yinxh.fun/)
 
 ## 🎯 浏览器支持
 

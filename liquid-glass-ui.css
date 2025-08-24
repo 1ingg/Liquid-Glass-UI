@@ -1,5 +1,5 @@
 /*!
- * Liquid Glass UI Framework v1.0.0
+ * Liquid Glass UI Framework v1.0.3
  * 现代液态玻璃UI组件库
  * Copyright (c) 2025 Liquid Glass UI
  * Licensed under MIT License
@@ -16,7 +16,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* ==================== 主题变量系统 ==================== */
+/* 主题变量系统 */
 :root {
     /* 深色主题变量 (默认) */
     --lgui-text-primary: rgba(255, 255, 255, 0.95);
@@ -205,7 +205,7 @@
     }
 }
 
-/* ==================== 页面背景主题 ==================== */
+/* 页面背景主题 */
 body.lgui-dark,
 body.lgui-light,
 body.lgui-auto {
@@ -222,7 +222,7 @@ body.lgui-auto-components {
     /* 仅应用组件主题变量，不设置页面背景 */
 }
 
-/* ==================== 特殊背景主题 ==================== */
+/* 特殊背景主题 */
 /* 液态玻璃渐变背景 */
 body.lgui-dark.lgui-glass-bg {
     --lgui-page-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -357,7 +357,7 @@ body.lgui-light.lgui-cream-light {
     100% { transform: scale(1); }
 }
 
-/* ==================== 按钮组件 ==================== */
+/* 按钮组件 */
 .glass-button {
     padding: 12px 24px;
     background: var(--lgui-bg-primary);
@@ -422,7 +422,7 @@ body.lgui-light.lgui-cream-light {
     transform: none;
 }
 
-/* ==================== 输入框组件 ==================== */
+/* 输入框组件 */
 .glass-input {
     width: 100%;
     max-width: 280px;
@@ -455,7 +455,7 @@ body.lgui-light.lgui-cream-light {
     transform: translateY(-1px);
 }
 
-/* ==================== 下拉选择器组件 ==================== */
+/* 下拉选择器组件 */
 .glass-select-container {
     position: relative;
     max-width: 280px;
@@ -607,7 +607,7 @@ body.lgui-light.lgui-cream-light {
     flex: 1;
 }
 
-/* ==================== 复选框组件 ==================== */
+/* 复选框组件 */
 .glass-checkbox {
     display: flex;
     align-items: center;
@@ -659,7 +659,7 @@ body.lgui-light.lgui-cream-light {
     display: block;
 }
 
-/* ==================== 单选框组件 ==================== */
+/* 单选框组件 */
 .glass-radio {
     display: flex;
     align-items: center;
@@ -711,7 +711,7 @@ body.lgui-light.lgui-cream-light {
     display: block;
 }
 
-/* ==================== 开关组件 ==================== */
+/* 开关组件 */
 .glass-switch {
     display: flex;
     align-items: center;
@@ -766,7 +766,7 @@ body.lgui-light.lgui-cream-light {
 
 
 
-/* ==================== 进度条组件 ==================== */
+/* 进度条组件 */
 .glass-progress {
     width: 100%;
     height: 12px;
@@ -817,7 +817,7 @@ body.lgui-light.lgui-cream-light {
     animation: progressShimmer 2.5s infinite ease-in-out;
 }
 
-/* ==================== 加载器组件 ==================== */
+/* 加载器组件 */
 .glass-loader {
     position: relative;
     display: flex;
@@ -857,7 +857,7 @@ body.lgui-light.lgui-cream-light {
     border-width: 3px;
 }
 
-/* ==================== 导航组件 ==================== */
+/* 导航组件 */
 .glass-nav {
     display: flex;
     gap: 5px;
@@ -899,7 +899,7 @@ body.lgui-light.lgui-cream-light {
     font-weight: 600;
 }
 
-/* ==================== 标签页组件 ==================== */
+/* 标签页组件 */
 .glass-tabs {
     width: 100%;
     max-width: 280px;
@@ -963,7 +963,7 @@ body.lgui-light.lgui-cream-light {
     display: block;
 }
 
-/* ==================== 滑块组件 ==================== */
+/* 滑块组件 */
 .glass-slider {
     width: 100%;
     position: relative;
@@ -1004,7 +1004,7 @@ body.lgui-light.lgui-cream-light {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* ==================== 模态框组件 ==================== */
+/* 模态框组件 */
 .glass-modal {
     display: none;
     position: fixed;
@@ -1081,7 +1081,7 @@ body.lgui-light.lgui-cream-light {
     justify-content: flex-end;
 }
 
-/* ==================== 工具提示组件 ==================== */
+/* 工具提示组件 */
 .glass-tooltip-container {
     position: relative;
     display: inline-block;
@@ -1122,7 +1122,7 @@ body.lgui-light.lgui-cream-light {
     opacity: 1;
 }
 
-/* ==================== 分页组件 ==================== */
+/* 分页组件 */
 .glass-pagination {
     display: flex;
     gap: 8px;
@@ -1164,7 +1164,7 @@ body.lgui-light.lgui-cream-light {
     cursor: not-allowed;
 }
 
-/* ==================== 面包屑组件 ==================== */
+/* 面包屑组件 */
 .glass-breadcrumb {
     display: flex;
     align-items: center;
@@ -1198,7 +1198,7 @@ body.lgui-light.lgui-cream-light {
     font-size: 12px;
 }
 
-/* ==================== 文本域组件 ==================== */
+/* 文本域组件 */
 .glass-textarea {
     width: 100%;
     padding: 16px 20px;
@@ -1240,7 +1240,7 @@ body.lgui-light.lgui-cream-light {
     background: var(--lgui-bg-hover);
 }
 
-/* ==================== 通知组件 ==================== */
+/* 通知组件 */
 .glass-notification {
     display: flex;
     align-items: center;
@@ -1321,7 +1321,7 @@ body.lgui-light.lgui-cream-light {
 
 
 
-/* ==================== 徽章组件 ==================== */
+/* 徽章组件 */
 .glass-badge {
     padding: 6px 12px;
     background: var(--lgui-bg-primary);
@@ -1373,7 +1373,7 @@ body.lgui-light.lgui-cream-light {
     color: rgba(252, 165, 165, 0.95);
 }
 
-/* ==================== 头像组件 ==================== */
+/* 头像组件 */
 .glass-avatar {
     width: 60px;
     height: 60px;
@@ -1415,7 +1415,7 @@ body.lgui-light.lgui-cream-light {
     border-radius: 50%;
 }
 
-/* ==================== 卡片组件 ==================== */
+/* 卡片组件 */
 .glass-card {
     background: var(--lgui-bg-secondary);
     border-radius: 16px;
@@ -1448,7 +1448,7 @@ body.lgui-light.lgui-cream-light {
     margin: 0;
 }
 
-/* ==================== 时间选择器组件 ==================== */
+/* 时间选择器组件 */
 .glass-time-picker {
     position: relative;
     display: inline-block;
@@ -1511,7 +1511,7 @@ body.lgui-light.lgui-cream-light {
     transform: translateY(0) scale(1);
 }
 
-/* ==================== 实用工具类 ==================== */
+/* 实用工具类 */
 .glass-container {
     background: var(--lgui-bg-secondary);
     border-radius: 16px;
@@ -1546,7 +1546,7 @@ body.lgui-light.lgui-cream-light {
     color: rgba(239, 68, 68, 0.9);
 }
 
-/* ==================== 响应式设计 ==================== */
+/* 响应式设计 */
 @media (max-width: 768px) {
     .glass-button {
         padding: 10px 20px;
@@ -1576,7 +1576,7 @@ body.lgui-light.lgui-cream-light {
     }
 }
 
-/* ==================== 滚动条样式 ==================== */
+/* 滚动条样式 */
 .glass-scrollbar::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -1597,7 +1597,7 @@ body.lgui-light.lgui-cream-light {
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* ==================== 主题变量 ==================== */
+/* 主题变量 */
 :root {
     --glass-primary: rgba(74, 144, 226, 0.8);
     --glass-primary-light: rgba(74, 144, 226, 0.3);

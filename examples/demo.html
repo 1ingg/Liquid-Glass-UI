@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liquid Glass UI - 全部组件展示</title>
-    <link rel="stylesheet" href="liquid-glass-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/@1ing/liquid-glass-ui@latest/liquid-glass-ui.min.css">
 </head>
 <body class="lgui-dark">
-    <div style="padding: 40px; max-width: 1200px; margin: 0 auto;">
+    <div class="main-container">
         
         <!-- 标题和主题切换 -->
-        <div style="text-align: center; margin-bottom: 50px;">
-            <h1 class="glass-text" style="font-size: 32px; margin-bottom: 20px;">Liquid Glass UI 组件库</h1>
-            <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 30px;">
+        <div class="header-section">
+            <h1 class="glass-text main-title">Liquid Glass UI 组件库</h1>
+            <div class="theme-buttons">
                 <button class="glass-button" onclick="switchTheme('dark')">深色主题</button>
                 <button class="glass-button" onclick="switchTheme('light')">浅色主题</button>
                 <button class="glass-button" onclick="switchTheme('auto')">自动主题</button>
@@ -20,9 +20,9 @@
         </div>
 
         <!-- 按钮组件 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">按钮组件</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
+        <div class="section">
+            <h2 class="glass-text section-title">按钮组件</h2>
+            <div class="button-group">
                 <button class="glass-button">默认按钮</button>
                 <button class="glass-button primary">主要按钮</button>
                 <button class="glass-button large">大按钮</button>
@@ -32,24 +32,24 @@
         </div>
 
         <!-- 输入框组件 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">输入组件</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">输入组件</h2>
+            <div class="input-grid">
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 8px;">输入框</label>
+                    <label class="glass-text label-block">输入框</label>
                     <input type="text" class="glass-input" placeholder="请输入内容...">
                 </div>
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 8px;">文本域</label>
+                    <label class="glass-text label-block">文本域</label>
                     <textarea class="glass-textarea" placeholder="请输入多行文本..." rows="4"></textarea>
                 </div>
             </div>
         </div>
 
         <!-- 选择器组件 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">选择器组件</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">选择器组件</h2>
+            <div class="select-grid">
                 <div class="glass-select-container">
                     <div class="glass-select" data-placeholder="请选择选项">
                         <div class="select-trigger">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 8px;">时间选择器</label>
+                    <label class="glass-text label-block">时间选择器</label>
                     <div class="glass-time-picker">
                         <div class="time-display">
                             <span class="time-value">14:30</span>
@@ -88,11 +88,11 @@
         </div>
 
         <!-- 表单控件 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">表单控件</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">表单控件</h2>
+            <div class="form-grid">
                 <div>
-                    <h4 class="glass-text" style="margin-bottom: 15px;">复选框</h4>
+                    <h4 class="glass-text label-block-15">复选框</h4>
                     <label class="glass-checkbox">
                         <input type="checkbox" checked>
                         <span class="checkmark"></span>
@@ -105,7 +105,7 @@
                     </label>
                 </div>
                 <div>
-                    <h4 class="glass-text" style="margin-bottom: 15px;">单选框</h4>
+                    <h4 class="glass-text label-block-15">单选框</h4>
                     <label class="glass-radio">
                         <input type="radio" name="radio-group" checked>
                         <span class="radiomark"></span>
@@ -118,7 +118,7 @@
                     </label>
                 </div>
                 <div>
-                    <h4 class="glass-text" style="margin-bottom: 15px;">开关</h4>
+                    <h4 class="glass-text label-block-15">开关</h4>
                     <label class="glass-switch">
                         <input type="checkbox" checked>
                         <span class="switch-slider"></span>
@@ -134,10 +134,10 @@
         </div>
 
         <!-- 滑块 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">滑块组件</h2>
-            <div style="max-width: 400px;">
-                <label class="glass-text" style="display: block; margin-bottom: 10px;">音量: <span id="slider-value">50</span>%</label>
+        <div class="section">
+            <h2 class="glass-text section-title">滑块组件</h2>
+            <div class="slider-container">
+                <label class="glass-text label-block-10">音量: <span id="slider-value">50</span>%</label>
                 <div class="glass-slider">
                     <input type="range" class="slider-input" min="0" max="100" value="50" id="volume-slider">
                 </div>
@@ -145,20 +145,20 @@
         </div>
 
         <!-- 进度条和加载器 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">进度和加载</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">进度和加载</h2>
+            <div class="input-grid">
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 10px;">进度条 75%</label>
+                    <label class="glass-text label-block-10">进度条 75%</label>
                     <div class="glass-progress">
                         <div class="progress-track">
-                            <div class="progress-fill" style="width: 75%;"></div>
+                            <div class="progress-fill progress-fill-75"></div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 10px;">加载器</label>
-                    <div style="display: flex; gap: 20px; align-items: center;">
+                    <label class="glass-text label-block-10">加载器</label>
+                    <div class="loader-container">
                         <div class="glass-loader spinner small">
                             <div class="spinner-ring"></div>
                         </div>
@@ -174,11 +174,11 @@
         </div>
 
         <!-- 导航和标签页 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">导航组件</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">导航组件</h2>
+            <div class="nav-grid">
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 10px;">导航栏</label>
+                    <label class="glass-text label-block-10">导航栏</label>
                     <nav class="glass-nav">
                         <a href="#" class="nav-item active">首页</a>
                         <a href="#" class="nav-item">产品</a>
@@ -187,7 +187,7 @@
                     </nav>
                 </div>
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 10px;">标签页</label>
+                    <label class="glass-text label-block-10">标签页</label>
                     <div class="glass-tabs">
                         <div class="tab-header">
                             <div class="tab-item active">Tab 1</div>
@@ -205,9 +205,9 @@
         </div>
 
         <!-- 卡片组件 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">卡片组件</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">卡片组件</h2>
+            <div class="card-grid">
                 <div class="glass-card">
                     <h4>卡片标题 1</h4>
                     <p>这是一个使用液态玻璃效果的卡片组件，具有美观的透明效果和动画。</p>
@@ -224,12 +224,12 @@
         </div>
 
         <!-- 徽章和头像 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">徽章和头像</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">徽章和头像</h2>
+            <div class="badge-avatar-grid">
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 15px;">徽章</label>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <label class="glass-text label-block-15">徽章</label>
+                    <div class="badge-container">
                         <span class="glass-badge">默认</span>
                         <span class="glass-badge primary">主要</span>
                         <span class="glass-badge success">成功</span>
@@ -238,16 +238,16 @@
                     </div>
                 </div>
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 15px;">头像</label>
-                    <div style="display: flex; gap: 15px; align-items: center;">
+                    <label class="glass-text label-block-15">头像</label>
+                    <div class="avatar-container">
                         <div class="glass-avatar small">
-                            <span class="glass-text" style="font-size: 12px;">S</span>
+                            <span class="glass-text avatar-text-small">S</span>
                         </div>
                         <div class="glass-avatar">
-                            <span class="glass-text" style="font-size: 16px;">M</span>
+                            <span class="glass-text avatar-text-medium">M</span>
                         </div>
                         <div class="glass-avatar large">
-                            <span class="glass-text" style="font-size: 20px;">L</span>
+                            <span class="glass-text avatar-text-large">L</span>
                         </div>
                     </div>
                 </div>
@@ -255,11 +255,11 @@
         </div>
 
         <!-- 面包屑和分页 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">导航辅助</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="section">
+            <h2 class="glass-text section-title">导航辅助</h2>
+            <div class="breadcrumb-pagination-grid">
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 10px;">面包屑</label>
+                    <label class="glass-text label-block-10">面包屑</label>
                     <nav class="glass-breadcrumb">
                         <a href="#" class="breadcrumb-item">首页</a>
                         <span class="breadcrumb-divider">/</span>
@@ -269,7 +269,7 @@
                     </nav>
                 </div>
                 <div>
-                    <label class="glass-text" style="display: block; margin-bottom: 10px;">分页</label>
+                    <label class="glass-text label-block-10">分页</label>
                     <div class="glass-pagination">
                         <button class="page-btn" disabled>‹</button>
                         <button class="page-btn">1</button>
@@ -283,9 +283,9 @@
         </div>
 
         <!-- 通知组件 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">通知组件</h2>
-            <div style="max-width: 400px;">
+        <div class="section">
+            <h2 class="glass-text section-title">通知组件</h2>
+            <div class="notification-container">
                 <div class="glass-notification">
                     <div class="notification-content">
                         <span class="notification-title">通知标题</span>
@@ -297,8 +297,8 @@
         </div>
 
         <!-- 工具提示 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">工具提示</h2>
+        <div class="section">
+            <h2 class="glass-text section-title">工具提示</h2>
             <div class="glass-tooltip-container">
                 <button class="glass-button">悬停查看提示</button>
                 <div class="glass-tooltip">这是一个工具提示</div>
@@ -306,14 +306,14 @@
         </div>
 
         <!-- 模态框触发 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">模态框</h2>
+        <div class="section">
+            <h2 class="glass-text section-title">模态框</h2>
             <button class="glass-button" onclick="showModal()">打开模态框</button>
         </div>
 
         <!-- 实用工具类 -->
-        <div style="margin-bottom: 40px;">
-            <h2 class="glass-text" style="margin-bottom: 20px;">实用工具类</h2>
+        <div class="section">
+            <h2 class="glass-text section-title">实用工具类</h2>
             <div class="glass-container">
                 <h4 class="glass-text">容器标题</h4>
                 <p class="glass-text-muted">这是一个使用工具类的容器组件</p>
@@ -355,6 +355,143 @@
             .lgui-auto .glass-text {
                 color: rgba(30, 30, 30, 0.95) !important;
             }
+        }
+
+        .main-container {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .main-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .theme-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .select-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .badge-avatar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .breadcrumb-pagination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .label-block {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .label-block-10 {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .label-block-15 {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .slider-container {
+            max-width: 400px;
+        }
+
+        .progress-fill-75 {
+            width: 75%;
+        }
+
+        .loader-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .avatar-container {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .avatar-text-small {
+            font-size: 12px;
+        }
+
+        .avatar-text-medium {
+            font-size: 16px;
+        }
+
+        .avatar-text-large {
+            font-size: 20px;
+        }
+
+        .notification-container {
+            max-width: 400px;
         }
     </style>
 
