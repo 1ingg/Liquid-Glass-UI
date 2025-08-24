@@ -14,6 +14,9 @@
 - **响应式** - 完美适配各种设备
 - **易于使用** - 即插即用，零配置
 
+## 演示站
+[https://demo.liquidglassui.cc/](https://demo.liquidglassui.cc/)
+
 ## 🚀 快速开始
 
 ### 安装
@@ -75,7 +78,7 @@ npm install @1ing/liquid-glass-ui
 
 ## 📚 文档
 
-完整文档：[https://liquidglass.yinxh.fun/](https://liquidglass.yinxh.fun/)
+完整文档：[https://liquidglassui.cc/](https://liquidglassui.cc/)
 
 ## 🎯 浏览器支持
 
