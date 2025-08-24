@@ -15,7 +15,7 @@
             <div class="theme-buttons">
                 <button class="glass-button" onclick="switchTheme('dark')">深色主题</button>
                 <button class="glass-button" onclick="switchTheme('light')">浅色主题</button>
-                <button class="glass-button" onclick="switchTheme('auto')">自动主题</button>
+                <button class="glass-button" onclick="switchTheme('auto')">渐变色主题</button>
             </div>
         </div>
 
@@ -344,16 +344,52 @@
     </div>
 
     <style>
+        /* 自动主题苹果渐变色背景 - 固定不滚动 */
+        body.lgui-auto {
+            background: linear-gradient(135deg, 
+                #ff9a9e 0%, 
+                #fecfef 15%, 
+                #fecfef 25%, 
+                #a8edea 40%, 
+                #fed6e3 55%, 
+                #ffb199 70%, 
+                #ff9a9e 85%, 
+                #fad0c4 100%);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+        /* 响应式深色模式下的苹果渐变 */
+        @media (prefers-color-scheme: dark) {
+            body.lgui-auto {
+                background: linear-gradient(135deg, 
+                    #667eea 0%, 
+                    #764ba2 15%, 
+                    #f093fb 25%, 
+                    #f5576c 40%, 
+                    #4facfe 55%, 
+                    #00f2fe 70%, 
+                    #a8edea 85%, 
+                    #fed6e3 100%);
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+        }
+        
         /* 浅色主题下的文字颜色修复 */
         .lgui-light .glass-text {
-            color: rgba(30, 30, 30, 0.95) !important;
+            color: rgba(30, 30, 30, 0.95);
         }
         .lgui-auto .glass-text {
-            color: rgba(30, 30, 30, 0.95) !important;
+            color: rgba(30, 30, 30, 0.9);
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
         }
-        @media (prefers-color-scheme: light) {
+        @media (prefers-color-scheme: dark) {
             .lgui-auto .glass-text {
-                color: rgba(30, 30, 30, 0.95) !important;
+                color: rgba(255, 255, 255, 0.95);
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
             }
         }
 
