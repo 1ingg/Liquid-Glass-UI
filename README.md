@@ -5,170 +5,86 @@
 [![NPM Version](https://img.shields.io/npm/v/@1ing/liquid-glass-ui.svg)](https://www.npmjs.com/package/@1ing/liquid-glass-ui)
 [![NPM Downloads](https://img.shields.io/npm/dm/@1ing/liquid-glass-ui.svg)](https://www.npmjs.com/package/@1ing/liquid-glass-ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CSS](https://img.shields.io/badge/CSS-Only-blue.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![Responsive](https://img.shields.io/badge/Responsive-✓-green.svg)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 
 ## ✨ 特性
 
-- 🎨 **现代设计** - 采用最新的玻璃态设计风格，具有毛玻璃效果和现代化的视觉体验
-- ⚡ **轻量级** - 纯CSS实现，无JavaScript依赖，体积小巧，性能优异
-- 📱 **响应式** - 完全响应式设计，在各种设备和屏幕尺寸上都能完美展示
-- 🔧 **易于使用** - 只需引入CSS文件，即可开始使用所有组件，无需复杂配置
-- 🎯 **高度可定制** - 提供CSS变量和主题系统，轻松定制符合品牌的设计风格
-- 🚀 **开箱即用** - 包含丰富的组件库，覆盖大部分常见的UI需求场景
+- **液态玻璃效果** - 半透明毛玻璃质感
+- **多主题支持** - 深色/浅色主题自动适配
+- **轻量级** - 纯CSS，无JS依赖，28KB gzipped
+- **响应式** - 完美适配各种设备
+- **易于使用** - 即插即用，零配置
 
 ## 🚀 快速开始
 
-### NPM 安装（推荐）
+### 安装
 
 ```bash
 npm install @1ing/liquid-glass-ui
 ```
 
-然后在您的项目中引入：
-
-```css
-/* 在 CSS 文件中引入 */
-@import '@1ing/liquid-glass-ui/liquid-glass-ui.css';
-```
-
-或者在 HTML 中引入：
+### 使用
 
 ```html
-<!-- 引入完整版本 -->
-<link rel="stylesheet" href="node_modules/@1ing/liquid-glass-ui/liquid-glass-ui.css">
-<!-- 或引入压缩版本 -->
-<link rel="stylesheet" href="node_modules/@1ing/liquid-glass-ui/liquid-glass-ui.min.css">
-```
-
-### CDN 引入
-
-```html
-<!-- 通过 unpkg CDN -->
-<link rel="stylesheet" href="https://unpkg.com/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
-<!-- 或压缩版本 -->
+<!-- CDN 引入 -->
 <link rel="stylesheet" href="https://unpkg.com/@1ing/liquid-glass-ui@latest/liquid-glass-ui.min.css">
 
-<!-- 通过 jsdelivr CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@1ing/liquid-glass-ui@latest/liquid-glass-ui.css">
+<!-- 主题控制 -->
+<body class="lgui-light">  <!-- 浅色主题 -->
+<body class="lgui-dark">   <!-- 深色主题 -->
+<body class="lgui-auto">   <!-- 自动主题 -->
 ```
 
-### 本地下载
-
-从 [GitHub Releases](https://github.com/1ingg/Liquid-Glass-UI/releases) 下载最新版本，或直接下载 `liquid-glass-ui.css` 文件：
+### 组件示例
 
 ```html
-<link rel="stylesheet" href="path/to/liquid-glass-ui.css">
-```
-
-## 📖 使用示例
-
-### 基本按钮
-
-```html
-<button class="glass-button">默认按钮</button>
+<!-- 按钮 -->
+<button class="glass-button">按钮</button>
 <button class="glass-button primary">主要按钮</button>
-<button class="glass-button secondary">次要按钮</button>
-```
 
-### 输入框
+<!-- 输入框 -->
+<input type="text" class="glass-input" placeholder="输入内容">
+<textarea class="glass-textarea" placeholder="文本域"></textarea>
 
-```html
-<input type="text" class="glass-input" placeholder="请输入内容">
-<textarea class="glass-textarea" placeholder="请输入多行文本"></textarea>
-```
-
-### 卡片
-
-```html
+<!-- 卡片 -->
 <div class="glass-card">
-  <div class="card-header">
-    <h3>卡片标题</h3>
-  </div>
-  <div class="card-content">
-    <p>这是卡片的内容区域。</p>
-  </div>
+  <h4>卡片标题</h4>
+  <p>卡片内容</p>
+</div>
+
+<!-- 表单控件 -->
+<label class="glass-checkbox">
+  <input type="checkbox">
+  <span class="checkmark"></span>
+  复选框
+</label>
+
+<!-- 导航 -->
+<div class="glass-nav">
+  <a href="#" class="nav-item active">首页</a>
+  <a href="#" class="nav-item">关于</a>
 </div>
 ```
 
-## 🎨 组件列表
+## 🎨 完整组件
 
-### 基础组件
-- [x] 按钮 Button
-- [x] 输入框 Input  
-- [x] 文本域 Textarea
-- [x] 卡片 Card
-
-### 表单组件
-- [x] 选择器 Select
-- [x] 复选框 Checkbox
-- [x] 单选框 Radio
-- [x] 开关 Switch
-
-### 数据展示
-- [x] 进度条 Progress
-- [x] 徽章 Badge
-- [ ] 头像 Avatar
-
-### 反馈组件
-- [ ] 模态框 Modal
-- [ ] 工具提示 Tooltip
-- [ ] 通知 Notification
-
-### 导航组件
-- [ ] 标签页 Tabs
-- [ ] 面包屑 Breadcrumb
-- [ ] 分页 Pagination
-
-## 📦 NPM 包
-
-- **包名**: `@1ing/liquid-glass-ui`
-- **版本**: ![NPM Version](https://img.shields.io/npm/v/@1ing/liquid-glass-ui.svg)
-- **大小**: ![Bundle Size](https://img.shields.io/bundlephobia/minzip/@1ing/liquid-glass-ui.svg)
-- **下载量**: ![NPM Downloads](https://img.shields.io/npm/dm/@1ing/liquid-glass-ui.svg)
-
-查看 NPM 包详情：[npmjs.com/package/@1ing/liquid-glass-ui](https://www.npmjs.com/package/@1ing/liquid-glass-ui)
+**基础**: 按钮、输入框、文本域、卡片  
+**表单**: 选择器、复选框、单选框、开关、时间选择器  
+**数据**: 进度条、加载器、徽章、头像  
+**导航**: 标签页、导航栏、面包屑、分页  
+**反馈**: 模态框、通知、工具提示
 
 ## 📚 文档
 
-完整的文档和示例请访问：[Liquid Glass UI 文档网站](https://1ingg.github.io/Liquid-Glass-UI/)
+完整文档：[https://1ingg.github.io/Liquid-Glass-UI/](https://1ingg.github.io/Liquid-Glass-UI/)
 
 ## 🎯 浏览器支持
 
-| Browser | Version |
-|---------|---------|
-| Chrome  | 88+     |
-| Firefox | 84+     |
-| Safari  | 14+     |
-| Edge    | 88+     |
-
-## 🤝 贡献
-
-欢迎贡献代码！请查看 [贡献指南](CONTRIBUTING.md) 了解详细信息。
-
-### 开发环境
-
-```bash
-# 克隆仓库
-git clone https://github.com/1ingg/Liquid-Glass-UI.git
-
-# 进入项目目录
-cd Liquid-Glass-UI
-
-# 启动文档开发服务器
-cd docs
-npm install
-npm run docs:dev
-```
+Chrome 88+ | Firefox 84+ | Safari 14+ | Edge 88+
 
 ## 📄 许可证
 
 [MIT License](LICENSE) © 2024 Liquid Glass UI Team
 
-## 🙏 致谢
-
-感谢所有为这个项目做出贡献的开发者！
-
 ---
 
-如果这个项目对您有帮助，请给我们一个 ⭐️ Star！ 
+⭐ 如果这个项目对您有帮助，请给我们一个 Star！ 
